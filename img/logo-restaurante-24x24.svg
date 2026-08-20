@@ -1,0 +1,16 @@
+<svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo circular -->
+  <circle cx="12" cy="12" r="11.5" fill="#F5EFE6" stroke="#C9A227" stroke-width="0.6"/>
+
+  <!-- Tallo -->
+  <line x1="12" y1="17" x2="12" y2="8" stroke="#1F3B2C" stroke-width="1"/>
+
+  <!-- Hoja izquierda -->
+  <path d="M 12 13 C 8.5 12.5, 7 10.5, 7.5 8 C 10.5 8.5, 12 10.5, 12 13 Z" fill="#4A5D3A"/>
+
+  <!-- Hoja derecha -->
+  <path d="M 12 10.5 C 15.5 10, 17 8, 16.5 5.5 C 13.5 6, 12 8, 12 10.5 Z" fill="#1F3B2C"/>
+
+  <!-- Punto dorado (brote) -->
+  <circle cx="12" cy="7" r="1.2" fill="#C9A227"/>
+</svg>

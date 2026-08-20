@@ -1,0 +1,57 @@
+<svg width="70" height="70" viewBox="0 0 420 420" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .txt-main { font-family: Georgia, 'Fraunces', 'Playfair Display', serif; }
+      .txt-sub { font-family: Georgia, 'Fraunces', serif; letter-spacing: 6px; }
+    </style>
+  </defs>
+
+  <!-- Fondo circular sutil -->
+  <circle cx="210" cy="210" r="200" fill="#F5EFE6" stroke="#C9A227" stroke-width="2"/>
+  <circle cx="210" cy="210" r="188" fill="none" stroke="#4A5D3A" stroke-width="1.5"/>
+
+  <!-- Rama izquierda -->
+  <g stroke="#1F3B2C" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M 95 210 C 80 190, 70 170, 75 140" />
+    <path d="M 82 178 C 65 172, 55 178, 48 165" />
+    <path d="M 88 155 C 72 148, 65 152, 55 140" />
+    <path d="M 78 200 C 60 198, 52 205, 40 198" />
+  </g>
+  <!-- Hojas rama izquierda -->
+  <g fill="#4A5D3A">
+    <ellipse cx="46" cy="163" rx="10" ry="5" transform="rotate(-30 46 163)"/>
+    <ellipse cx="53" cy="138" rx="10" ry="5" transform="rotate(-45 53 138)"/>
+    <ellipse cx="38" cy="197" rx="10" ry="5" transform="rotate(10 38 197)"/>
+    <ellipse cx="72" cy="138" rx="9" ry="4.5" transform="rotate(-60 72 138)"/>
+  </g>
+
+  <!-- Rama derecha (espejo) -->
+  <g stroke="#1F3B2C" stroke-width="3" fill="none" stroke-linecap="round">
+    <path d="M 325 210 C 340 190, 350 170, 345 140" />
+    <path d="M 338 178 C 355 172, 365 178, 372 165" />
+    <path d="M 332 155 C 348 148, 355 152, 365 140" />
+    <path d="M 342 200 C 360 198, 368 205, 380 198" />
+  </g>
+  <g fill="#4A5D3A">
+    <ellipse cx="374" cy="163" rx="10" ry="5" transform="rotate(30 374 163)"/>
+    <ellipse cx="367" cy="138" rx="10" ry="5" transform="rotate(45 367 138)"/>
+    <ellipse cx="382" cy="197" rx="10" ry="5" transform="rotate(-10 382 197)"/>
+    <ellipse cx="348" cy="138" rx="9" ry="4.5" transform="rotate(60 348 138)"/>
+  </g>
+
+  <!-- Hoja central superior decorativa -->
+  <g fill="#C9A227">
+    <path d="M 210 95 C 195 110, 195 130, 210 145 C 225 130, 225 110, 210 95 Z"/>
+  </g>
+  <line x1="210" y1="98" x2="210" y2="142" stroke="#8a6d1a" stroke-width="1.2"/>
+
+  <!-- Texto principal -->
+  <text x="210" y="222" text-anchor="middle" class="txt-main" font-size="46" fill="#1F3B2C" font-weight="600">Raíz</text>
+
+  <!-- Línea decorativa -->
+  <line x1="150" y1="240" x2="270" y2="240" stroke="#C9A227" stroke-width="1.5"/>
+  <circle cx="210" cy="240" r="3" fill="#C9A227"/>
+
+  <!-- Subtítulo -->
+  <text x="210" y="262" text-anchor="middle" class="txt-sub" font-size="12" fill="#4A5D3A">RESTAURANTE</text>
+</svg>
