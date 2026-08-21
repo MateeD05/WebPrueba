@@ -33,24 +33,77 @@ header{
     color: white;
 }
 
+.navbar{
+    position: relative;
+}
 
-.nav-header{
+
+.nav-desktop{
     display: flex;
     align-items: center;
     gap: 80px;
+    list-style: none;
 }
 
-.nav-header a{
+.nav-desktop a{
     text-decoration: none;
     color: white;
     font-size: 20px;
     transition: color 0.2s ease;
 }
 
-.nav-header a:hover{
+.nav-desktop a:hover{
     color: #C08552;
 }
 
+
+
+.nav-menu.abierto {
+  max-height: 300px; /* suficiente para que entren todos los links */
+}
+
+.nav-menu li {
+  border-top: 1px solid rgba(243, 236, 221, 0.1);
+}
+
+.nav-menu li a {
+  display: block;
+  padding: 1rem 1.5rem;
+  color: #F3ECDD;
+  text-decoration: none;
+  font-size: 0.95rem;
+}
+
+.nav-menu li a:hover {
+  color: #C08552;
+}
+
+.menu-btn{
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+
+.menu-interactivo{
+    display: none;
+}
+
+.nav-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: #1E2A20;
+    overflow: hidden;
+    max-height: 0;
+    transition: max-height 0.3s ease;
+    z-index: 999;
+    display: none;
+}
 
 .btn-contactanos {
   display: inline-flex;
@@ -122,17 +175,28 @@ header{
     opacity: 0.8;
 }
 
-.btn-ig{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    padding: 10px;
-    background-color: transparent;
-    border-radius: 25px;
-    gap: 15px;
-    color: #F8F5F0;
-    font-size: 20px;
-    margin-top: 30px;
+.btn-instagram {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 0.6rem 1.8rem;
+  background: transparent;
+  border: 1.5px solid #F3ECDD;
+  border-radius: 50px;
+  color: #F3ECDD;
+  font-size: 1rem;
+  font-weight: 600;
+  text-decoration: none;
+  margin-top: 1.5rem;
+}
+
+.btn-instagram:hover {
+  background: rgba(243, 236, 221, 0.1);
+}
+
+.icon-instagram {
+  width: 18px;
+  height: 18px;
 }
 
 .nosotros-historia{
@@ -155,8 +219,9 @@ header{
 }
 
 .img-historia img{
-    width: 550px;
+    width: 100%;
     height: 780px;
+    min-width: 0;
     border: 4px solid #C08552;
     border-radius: 30px;
     object-fit: cover;
@@ -259,8 +324,31 @@ header{
   text-decoration: none;
   font-size: 1.1rem;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+  transition: background-color 0.2s ease;
 }
 
 .btn-reservas:hover{
-    background-color: #C08552;
+    background-color: #a25a1b;
+}
+
+
+@media (max-width: 1050px){
+    .span-banner{
+        font-size: 25px;
+    }
+}
+
+@media (max-width: 905px) {
+
+    .header-logo{
+        display: none;
+    }
+
+    .menu-interactivo{
+        display: flex;
+    }
+
+    .nav-desktop{
+        display: none;
+    }
 }

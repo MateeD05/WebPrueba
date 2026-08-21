@@ -6,18 +6,31 @@
     <title>Raiz: Mejores alimentos organicos, disfrutando de la naturaleza</title>
     <link rel="stylesheet" href="./styles.css">
     <link rel="shortcut icon" href="./img/logo-restaurante-24x24.svg" type="image/x-icon">
+    <script type="module" src="./script.js"></script>
 </head>
 <body>
     <header>
         <div class="contenedor-top">
+            <div class="menu-interactivo">
+                <button type="button" class="menu-btn" id="btn-menu" aria-label="Abrir menú" aria-expanded="false">
+                    <img src="./img/list.svg" alt="menú">
+                </button>
+            </div>
             <div class="header-logo">
                 <img src="./img/logo-restaurante.svg" alt="logo del Restaurante">
                 <span>Raiz</span>
             </div>
-            <nav class="nav-header">
-                <a href="" target="_blank">Menu</a>
-                <a href="#seccion-historia">Nosotros</a>
-                <a href="#seccion-ubicanos">Ubicanos</a>
+            <nav class="navbar">
+                <ul class="nav-desktop">
+                    <li><a href="" target="_blank">Menu</a></li>
+                    <li><a href="#seccion-historia">Nosotros</a></li>
+                    <li><a href="#seccion-ubicanos">Ubicanos</a></li>
+                </ul>
+                <ul class="nav-menu" id="nav-menu">
+                    <li><a href="">Menu</a></li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#ubicanos">Ubicanos</a></li>
+                </ul>
             </nav>
             <div class="button-header">
                 <a href="https://wa.me/5491160306298?text=Hola!%20Quiero%20hacer%20una%20reserva" 
@@ -37,10 +50,13 @@
         <div class="over-banner">
             <h1>Raiz</h1>
             <span class="span-banner">RestoBar:Comida Organica y natural</span>
-            <button class="btn-ig">
-                <span class="ig-span-btn">Instagram</span>
-                <img src="./img/instagram.svg" alt="ig-icon">
-            </button>
+            <a href="https://www.instagram.com/instagram/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                class="btn-instagram">
+                Instagram
+                <img src="./img/instagram.svg" alt="icono ig" class="icon-instagram">
+            </a>
         </div>
         <section class="nosotros-historia" id="seccion-historia">
             <div class="historia-local">
