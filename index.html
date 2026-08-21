@@ -15,15 +15,18 @@
                 <span>Raiz</span>
             </div>
             <nav class="nav-header">
-                <a href="">Menu</a>
-                <a href="">Nosotros</a>
-                <a href="">Ubicanos</a>
+                <a href="" target="_blank">Menu</a>
+                <a href="#seccion-historia">Nosotros</a>
+                <a href="#seccion-ubicanos">Ubicanos</a>
             </nav>
             <div class="button-header">
-                <button type="button">
-                    <span>Contactanos</span>
-                    <img src="./img/whatsapp.svg" alt="whatsapp icon">
-                </button>
+                <a href="https://wa.me/5491160306298?text=Hola!%20Quiero%20hacer%20una%20reserva" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    class="btn-contactanos">
+                    Contactanos
+                    <img src="./img/whatsapp.svg" alt="icono-wsp" class="icon-whatsapp">
+                </a>
             </div>
         </div>
     </header>
@@ -39,7 +42,49 @@
                 <img src="./img/instagram.svg" alt="ig-icon">
             </button>
         </div>
+        <section class="nosotros-historia" id="seccion-historia">
+            <div class="historia-local">
+                <div class="img-historia">
+                    <img src="./img/historia foto.jpg" alt="foto local historia">
+                </div>
+                <article class="historia-text">
+                    <h1>Nuestra historia</h1>
+                    <span>Abrí Raiz en 2015, en un viejo galpón que era de mi familia. La idea era simple: volver a cocinar como en casa, con lo que da la huerta y lo que traen los productores de acá cerca. Mi hermana Sofía, que se recibió de cocinera, se sumó desde el primer día y juntos armamos el menú a puro ensayo y error. Lo que empezó como un proyecto de fin de semana se convirtió en esto: un lugar entre plantas y madera donde cada plato tiene su tiempo y su historia. Hoy, cada vez que abrimos las puertas, seguimos cocinando con la misma idea de siempre.</span>
+                </article>
+            </div>
+        </section>
+        <section class="container-ubicanos" id="seccion-ubicanos">
+            <div class="ubicanos-h1">
+                <h1>UBICANOS</h1>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d13105.894533417608!2d-58.1873126081787!3d-34.794024120498186!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32628e1164a7d%3A0xdcaad2b6d982d8ef!2sCementerio%20Parque%20Municipal%20de%20Berazategui!5e0!3m2!1ses-419!2sar!4v1787313587010!5m2!1ses-419!2sar" 
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
+            </div>
+        </section>
+        <a href="" class="btn-reservas">Reservar</a>
     </main>
-    <footer></footer>
+    <footer>
+        <div class="container-footer">
+            <div class="links-footer">
+                <a href="https://www.instagram.com/instagram/" target="_blank">
+                    Instagram
+                    <img src="./img/instagram.svg" alt="icono ig">
+                </a>
+                <a href="https://www.facebook.com/facebook" target="_blank">
+                    Facebook
+                    <img src="./img/facebook.svg" alt="icono facebook">
+                </a>
+                <span>Email: Ejemplo@gmail.com</span>
+            </div>
+            <div class="raiz-footer">
+                <span>RAIZ</span>
+            </div>
+            <div class="copy-footer">
+                <p>&copy; 2026 Raiz. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

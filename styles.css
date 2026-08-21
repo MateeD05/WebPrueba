@@ -44,21 +44,35 @@ header{
     text-decoration: none;
     color: white;
     font-size: 20px;
+    transition: color 0.2s ease;
+}
+
+.nav-header a:hover{
+    color: #C08552;
 }
 
 
-.button-header button{
-    display: flex;
-    align-items: center;
-    padding: 10px 20px;
-    gap: 10px;
-    border-radius: 15px;
-    color: white;
-    background-color: rgb(92, 182, 92);
-    border: none;
-    font-size: 15px;
-    font-weight: bold;
-    cursor: pointer;
+.btn-contactanos {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0.6rem 1.6rem;
+  background: linear-gradient(135deg, #6FCF7C, #4CAF50);
+  color: #FFFFFF;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 700;
+  border: none;
+}
+
+.btn-contactanos:hover {
+  background: linear-gradient(135deg, #63C271, #439A46);
+}
+
+.icon-whatsapp {
+  width: 18px;
+  height: 18px;
 }
 
 .img-major{
@@ -121,3 +135,132 @@ header{
     margin-top: 30px;
 }
 
+.nosotros-historia{
+    background-color: #1E2A20;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.historia-local{
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 90%;
+    padding: 100px 0;
+}
+
+.img-historia img{
+    width: 550px;
+    height: 780px;
+    border: 4px solid #C08552;
+    border-radius: 30px;
+    object-fit: cover;
+}
+
+
+.historia-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 40px;
+    max-width: 480px;
+    background-color: #F3ECDD;
+    padding: 100px 50px;
+    border-radius: 50px;
+}
+
+.historia-text span{
+    color: #C08552;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.container-ubicanos{
+    background-color: #1E2A20;
+    padding: 80px 55px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+}
+
+.ubicanos-h1 h1{
+    font-size: 65px;
+    color: #C08552;
+}
+
+.map-container {
+  position: relative;
+  width: 100%;
+  height: 350px;
+  overflow: hidden;
+  border-radius: 20px;
+}
+
+.map-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+  border: 0;
+}
+
+
+.container-footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 20px 40px;
+    align-items: center;
+    background-color: #1F3B2C;
+}
+
+.links-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    color: #C08552;
+    font-size: 20px;
+}
+
+.links-footer a{
+    display: flex;
+    text-decoration: none;
+    color: #C08552;
+    gap: 10px;
+    align-items: center;
+}
+
+.raiz-footer span{
+    font-size: 100px;
+    color: #C08552;
+}
+
+.copy-footer p{
+    color: #C08552;
+}
+
+.btn-reservas {
+  position: fixed;
+  bottom: 90px;
+  right: 50px;
+  z-index: 1000;
+  padding: 1rem 2.2rem;
+  background: #C08552;
+  color: #F3ECDD;
+  border-radius: 50px;
+  text-decoration: none;
+  font-size: 1.1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.btn-reservas:hover{
+    background-color: #C08552;
+}
