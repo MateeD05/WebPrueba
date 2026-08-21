@@ -19,6 +19,7 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
+    position: relative;
 }
 
 .header-logo{
@@ -33,9 +34,6 @@ header{
     color: white;
 }
 
-.navbar{
-    position: relative;
-}
 
 
 .nav-desktop{
@@ -102,7 +100,6 @@ header{
     max-height: 0;
     transition: max-height 0.3s ease;
     z-index: 999;
-    display: none;
 }
 
 .btn-contactanos {
@@ -336,6 +333,22 @@ header{
     .span-banner{
         font-size: 25px;
     }
+
+    .raiz-footer span{
+        font-size: 50px;
+    }
+
+    .links-footer a{
+        font-size: 17px;
+    }
+
+    .links-footer span{
+        font-size: 16px;
+    }
+
+    .copy-footer p{
+        font-size: 12px;
+    }
 }
 
 @media (max-width: 905px) {
@@ -344,11 +357,39 @@ header{
         display: none;
     }
 
+    .nav-desktop{
+        display: none;
+    }
+
     .menu-interactivo{
         display: flex;
     }
 
-    .nav-desktop{
+}
+
+
+@media (max-width: 465px){
+    .raiz-footer{
+        display: none;
+    }
+
+    .over-banner h1{
+        font-size: 90px;
+    }
+
+    .span-banner{
+        font-size: 15px;
+    }
+
+    .ubicanos-h1 h1{
+        font-size: 50px;
+    }
+
+    .copy-footer p{
+        font-size: 10px;
+    }
+
+    .button-header span{
         display: none;
     }
 }
